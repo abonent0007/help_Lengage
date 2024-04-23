@@ -8,8 +8,8 @@
 1. Нажмите на клавиатуре <b> Win + R </b><br>
 2. В открывшемся окне введите <b> CMD </b> и нажмие Enter<br>
 3. В окне командной строки наберите <b> PowerShell </b> и нажмите Enter<br>
-4. Далее копируйте код построчно и выполнайте его подтверждая Enter.<br>
-5. <code>$LanguageList = Get-WinUserLanguageList
-Set-WinUserLanguageList($LanguageList[0], $LanguageList[1]) -Force</code> Данная команда оставляет два первых язука, как на картинке.
+4. Далее копируйте код ниже построчно и выполнайте его подтверждая Enter.<br>
+5.1 <code>$LanguageList = Get-WinUserLanguageList</code><br>
+5.2 <code>Set-WinUserLanguageList($LanguageList[0], $LanguageList[1]) -Force</code> Данная команда оставляет два первых язука, как на картинке.
 Если вам нужно оставить в языковой панели три первых языка из списка языковой панели то вместо второй строчки ввода в термина,
 испульзуйте эту <code>Set-WinUserLanguageList($LanguageList[0], $LanguageList[1], $LanguageList[2]) -Force</code>
